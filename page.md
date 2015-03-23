@@ -1,1 +1,1 @@
-<body> URL: {{ site.baseurl }} :URL</body>
+URL: {{ site.baseurl }} :URL
