@@ -36,8 +36,8 @@
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 {% assign relative-baseurl = "" %}
-{% assign canon = "http://illicitonion.com" | append: "page.html" | split: "/" %}
-{% for item in canon offset:2 %}
+{% assign canon = "" | append: "page.html" | split: "/" %}
+{% for item in canon %}
 {% assign relative-baseurl = relative-baseurl | append:"../" %}
 {% endfor %}
 DWH: {{ relative-baseurl }} :DWH
