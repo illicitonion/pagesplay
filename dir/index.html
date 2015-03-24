@@ -1,0 +1,10 @@
+---
+---
+
+{% assign relative-baseurl = "" %}
+{% assign canon = "" | append: "page.html" | split: "/" %}
+{% for item in canon %}
+{% assign relative-baseurl = relative-baseurl | append:"../" %}
+{% endfor %}
+DWH2: {{ relative-baseurl }} :2DWH
+
