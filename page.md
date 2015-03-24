@@ -1,1 +1,1 @@
-URL: {{ site.baseurl }} :URL
+URL: {{site.baseurl}} :URL
