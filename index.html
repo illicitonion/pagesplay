@@ -36,11 +36,12 @@
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 {% assign relative-baseurl = "" %}
-{% assign canon = "" | append: "page.html" | split: "/" %}
-{% for item in canon %}
+{% assign canon = page.url | split: "/" %}
+{% for item in canon offset:2 %}
+DWH: Item: {{ item }} :DWH<br />
 {% assign relative-baseurl = relative-baseurl | append:"../" %}
 {% endfor %}
-DWH2: {{ relative-baseurl }} :2DWH
+DWH3: {{ relative-baseurl }} :3DWH
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
