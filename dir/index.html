@@ -2,7 +2,7 @@
 ---
 
 {% assign relative-baseurl = "" %}
-{% assign canon = "" | append: "page.html" | split: "/" %}
+{% assign canon = page.url | split: "/" %}
 {% for item in canon %}
 DWH: Item: {{ item }} :DWH
 {% assign relative-baseurl = relative-baseurl | append:"../" %}
