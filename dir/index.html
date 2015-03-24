@@ -3,9 +3,9 @@
 
 {% assign relative-baseurl = "" %}
 {% assign canon = page.url | split: "/" %}
-{% for item in canon offset:1 %}
+{% for item in canon offset:2 %}
 DWH: Item: {{ item }} :DWH<br />
 {% assign relative-baseurl = relative-baseurl | append:"../" %}
 {% endfor %}
-DWH2: {{ relative-baseurl }} :2DWH
+DWH3: {{ relative-baseurl }} :3DWH
 
